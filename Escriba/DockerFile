@@ -1,0 +1,11 @@
+# Use a imagem oficial do OpenJDK como base
+FROM openjdk:11-jre-slim
+
+# Diretório de trabalho dentro do contêiner
+WORKDIR /app
+
+# Copie o arquivo JAR da sua aplicação para o contêiner
+COPY target/Escriba-0.0.1-SNAPSHOT.jar /app/app.jar
+
+# Comando para executar a aplicação quando o contêiner for iniciado
+CMD ["java", "-jar", "app.jar"]

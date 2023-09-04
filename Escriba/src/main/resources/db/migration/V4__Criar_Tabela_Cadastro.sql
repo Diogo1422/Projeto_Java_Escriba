@@ -1,0 +1,4 @@
+CREATE TABLE cadastro (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL
+);
